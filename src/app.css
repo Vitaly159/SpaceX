@@ -1,0 +1,486 @@
+.wrapper{
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 820px;
+  box-sizing: border-box;
+  background-image: url('/src/images/фон2.png');
+  background-position: center center;
+  width: 100%;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.242);
+  border-bottom: 1px rgba(160, 160, 160, 0.25) solid;
+  border-top: 1px rgba(160, 160, 160, 0.25) solid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  padding: 1px 80px 0 15px;
+}
+
+.logo {
+  height: 99px;
+  width: 351px;
+  background: 
+    linear-gradient(to right, rgb(160, 160, 160) 10px, transparent 0, transparent calc(100% - 10px), rgb(160, 160, 160) 0) 0 0 / 100% 1px no-repeat,
+    linear-gradient(to right, rgb(160, 160, 160) 10px, transparent 0, transparent calc(100% - 10px), rgb(160, 160, 160) 0) 0 100% / 100% 1px no-repeat,
+    linear-gradient(to bottom, rgb(160, 160, 160) 10px, transparent 0, transparent calc(100% - 10px), rgb(160, 160, 160) 0) 0 0 / 1px 100% no-repeat,
+    linear-gradient(to bottom, rgb(160, 160, 160) 10px, transparent 0, transparent calc(100% - 10px), rgb(160, 160, 160) 0) 100% 0 / 1px 100% no-repeat;
+}
+
+.inner{
+  border: 0.1px rgba(160, 160, 160, 0.249) solid;
+  border-bottom: none;
+  height: 98px;
+  width: 350px;
+  text-align: center;
+}
+
+.inner img{
+  position: relative;
+  top: 45%;
+  height: auto;
+  transform: translateY(-50%);
+}
+
+.header ul{
+  list-style-type: none;
+  display: flex;
+  cursor: pointer;
+}
+
+.header ul div{
+  display: flex;
+}
+
+.header li{
+  color: #d8d7d8;
+  margin-left: 50px;
+  font-size: 18px;
+  padding: 10px 0;
+  border: 1px transparent solid;
+}
+
+.header li:hover{
+  color: #908f8f;
+  border-bottom: 1px #908f8f solid;
+}
+
+.content{
+  margin-top: 90px;
+  height: 430px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-block{
+  position: relative;
+  width: 50%;
+  z-index: 0;
+  /* border-radius: 100px; */
+}
+
+#main {
+  padding-left: 3px;
+  width: 530px;
+  position: relative;
+  overflow: hidden;
+  border-bottom-right-radius: 67px;
+}
+
+.left-block h1{
+  position: relative;
+  background: linear-gradient(to right, white 8%, #ff3f04 85%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform:uppercase;
+  font-size: 70px;
+  margin-bottom: 0;
+  z-index: -1;
+}
+
+.left-block p{
+  margin: 0;
+  font-size: 31px;
+  color: white;
+  background: linear-gradient(to right, white 12%, #ff3f04 65%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-start{
+  display: inline-block;
+  margin-top: 125px;
+  color: rgb(164, 164, 164);
+  cursor: pointer;
+  width: 210px;
+  height: 40px;
+  z-index: -1;
+  text-align: center;
+  border: 1px solid;
+  border-image: linear-gradient(150deg, rgba(48, 51, 249, 0.4) 15%, rgb(78, 108, 254) 20%, #0029FF 80%, #0024E2 70%, rgba(104, 104, 104, 0.3) 99%) 1;
+}
+
+.btn-start div{
+  position: relative;
+  width: 212px;
+  height: 42px;
+  left: -1px;
+  top:-1px;
+
+  background: 
+  linear-gradient(to right, rgb(255, 255, 255) 0, transparent 0, transparent calc(100% - 5px), rgb(255, 255, 255) 0) 0 0 / 100% 2px no-repeat,
+  linear-gradient(to right, rgb(254, 254, 254) 5px, transparent 0, transparent calc(100%), rgb(255, 255, 255) 0) 0 100% / 100% 2px no-repeat,
+  linear-gradient(to bottom, rgb(255, 255, 255) 0, transparent 0, transparent calc(100% - 5px), rgb(249, 249, 249) 0) 0 0 / 2px 100% no-repeat,
+  linear-gradient(to bottom, rgb(255, 255, 255) 5px, transparent 0, transparent calc(100%), rgb(255, 255, 255) 0) 100% 0 / 2px 100% no-repeat;
+}
+
+.btn-start span{
+  line-height: 42px;
+}
+
+.btn-start:hover{
+  background-color: rgba(0, 0, 0, 0.358);
+  color: rgb(203, 203, 203);
+}
+
+.right-block{
+  margin-top: 50px;
+}
+
+.line{
+  width: 400px;
+  display: inline-block;
+}
+
+.num1{
+  border: 1px solid;
+  border-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0)70%, rgb(91, 91, 91) 90%) 0;
+  opacity: 0.6;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to bottom right, rgba(254, 254, 254, 0) 50%, rgba(238, 238, 238, 0.1) 90%);
+}
+
+.num1:hover{
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0)70%, rgb(91, 91, 91) 90%) 1;
+  opacity: 1;
+  background: linear-gradient(to bottom right, rgba(254, 254, 254, 0) 50%, rgba(238, 238, 238, 0.2) 90%);
+}
+
+.line img{
+  border: 1px rgb(250, 250, 250) solid;
+  width: 100%;
+  display: inline-block;
+}
+
+.num1 .little-up{
+  margin: 5px 0 10px;
+}
+
+.num1 .big{
+  margin: 0;
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+}
+
+.num1 .little-up, .num1 .little-down{
+  color: rgb(199, 199, 199);
+}
+
+.num1 .little-down{
+  margin: 0;
+  line-height: 10px;
+}
+
+.benefits-up-block{
+  display: flex; 
+}
+
+.safety{
+  border: 1px solid;
+  border-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0)70%, rgb(91, 91, 91) 90%) 0;
+  opacity: 0.6;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to bottom left, rgba(254, 254, 254, 0) 60%, rgba(238, 238, 238, 0.1) 90%);
+}
+
+.safety:hover{
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0)70%, rgb(91, 91, 91) 90%) 1;
+  opacity: 1;
+  background: linear-gradient(to bottom left, rgba(254, 254, 254, 0) 50%, rgba(238, 238, 238, 0.2) 90%);
+}
+
+.safety .little-up{
+  margin: 5px 0 10px;
+}
+
+.safety .big{
+  margin: 0;
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+}
+
+.safety .little-up, .safety .little-down{
+  color: rgb(199, 199, 199);
+}
+
+.safety .little-down{
+  margin: 0;
+  line-height: 10px;
+}
+
+.benefits-down-block{
+  display: flex;
+  margin-top: 10px;
+}
+
+.calendar{
+  border: 1px solid;
+  border-image: linear-gradient(to top right, rgba(255, 255, 255, 0)70%, rgb(91, 91, 91) 90%) 0;
+  opacity: 0.6;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to top right, rgba(254, 254, 254, 0) 30%, rgba(238, 238, 238, 0.1) 60%);
+}
+
+.calendar:hover{
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to top right, rgba(255, 255, 255, 0)70%, rgb(91, 91, 91) 90%) 1;
+  opacity: 1;
+  background: linear-gradient(to top right, rgba(254, 254, 254, 0) 50%, rgba(238, 238, 238, 0.2) 90%);
+}
+
+.calendar .little-up{
+  margin: 30px 0 10px;
+}
+
+.calendar .big{
+  margin: 0;
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+}
+
+.calendar .little-up, .calendar .little-down{
+  color: rgb(199, 199, 199);
+}
+
+.calendar .little-down{
+  margin: 0;
+  line-height: 10px;
+}
+
+.days{
+  border: 1px solid;
+  border-image: linear-gradient(to top left, rgba(255, 255, 255, 0)70%, rgb(91, 91, 91) 90%) 0;
+  opacity: 0.6;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to top left, rgba(254, 254, 254, 0) 30%, rgba(238, 238, 238, 0.2) 90%);
+}
+
+.days:hover{
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to top left, rgba(255, 255, 255, 0)70%, rgb(91, 91, 91) 90%) 1;
+  opacity: 1;
+  background: linear-gradient(to top left, rgba(254, 254, 254, 0) 50%, rgba(238, 238, 238, 0.2) 90%);
+}
+
+.days .little-up{
+  margin: 30px 0 10px;
+}
+
+.days .big{
+  margin: 0;
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+}
+
+.days .little-up, .days .little-down{
+  color: rgb(199, 199, 199);
+}
+
+.days .little-down{
+  margin: 0;
+  line-height: 10px;
+}
+
+.ss{
+  position: relative;
+  width: 600px;
+}
+
+@media (max-width: 1420px) {
+	#main {
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+	.num1, .calendar, .days, .safety{
+    background-color: rgba(1, 1, 1, 0.817);
+  }
+
+  .header ul{
+    display: block;
+  }
+
+  .header li{
+    color: #d8d7d8;
+    margin-left: 50px;
+    font-size: 18px;
+    margin: 0 10px;
+    border: 1px transparent solid;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+   .header{
+    justify-content: stretch;
+    padding: 0;
+   }
+
+  .header ul{
+    display: block;
+    margin: 0;
+  }
+
+  .header li{
+    color: #d8d7d8;
+    margin-left: 10px;
+    font-size: 18px;
+    border: 1px transparent solid;
+  }
+
+  .content{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .left-block, #main{
+    text-align: center;
+    width: 100%;
+  }
+  
+  .btn-start{
+    margin: 20px 0;
+    background-color: rgba(0, 0, 255, 0.331);
+    color: white;
+  }
+
+  .right-block{
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .benefits{
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .num1, .calendar, .days, .safety{
+    background-color: rgba(1, 1, 1, 0.817);
+  }
+}
+
+@media (max-width: 800px) {
+  .header{
+    display: inline-block;
+    height: 220px;
+    padding: 0;
+  }
+
+  .logo{
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .header ul{
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  .nav-block{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .header li{
+    color: #d8d7d8;
+    margin-left: 10px;
+    font-size: 16px;
+    border: 1px transparent solid;
+  }
+
+  .content{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .left-block, #main{
+    text-align: center;
+    width: 100%;
+  }
+
+  #main h1{
+    font-size: 35px;
+  }
+
+  .left-block p{
+    font-size: 20px;
+  }
+
+  .btn-start{
+    margin: 20px 0 0;
+    background-color: rgba(0, 0, 255, 0.331);
+    color: white;
+  }
+
+  .benefits{
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .num1, .calendar, .days, .safety{
+    background-color: rgba(1, 1, 1, 0.817);
+  }
+}
